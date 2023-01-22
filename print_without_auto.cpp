@@ -18,9 +18,10 @@ int main()
             de.push_front(a);
         }
     }
-    for(int i=0;i<de.size();i++)
+    while(de.size())
     {
-        cout<<de[i]<< " ";
+        cout<<de.front()<< " ";
+        de.pop_back();
     }
     cout << endl;
     de.clear();
